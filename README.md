@@ -1,0 +1,1 @@
+docker build -t boutique/product-catalog-service:v0.0.1 .
