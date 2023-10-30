@@ -3,10 +3,9 @@ services:
   web:
     build:
       context: .
-      # Correct the path to your Dockerfile
       dockerfile: Dockerfile
+    env_file: app.env
+    environment:
+      - DB_HOST=host.docker.internal
     ports:
-      - 8080:3000
-    # Important to bind/mount your codebase dir to /app dir for live reload
-    volumes:
-      - ./:/app
+      - 8080:8080

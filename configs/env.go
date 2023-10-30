@@ -32,6 +32,8 @@ func loadEnvVariables() (config *envConfigs) {
 	// Tell viper the type of your file
 	viper.SetConfigType("env")
 
+	viper.AutomaticEnv()
+
 	// Viper reads all the variables from env file and log error if any found
 	if err := viper.ReadInConfig(); err != nil {
 		log.Fatal("Error reading env file", err)

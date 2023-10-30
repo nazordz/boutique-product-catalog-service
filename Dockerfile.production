@@ -1,0 +1,24 @@
+# Build Stage
+FROM golang:1.21.2-alpine as builder
+
+WORKDIR /app
+
+COPY . .
+
+RUN go mod download
+
+RUN go build -o /productcatalogservice main.go
+
+# Deploy Stage
+FROM alpine:latest
+
+WORKDIR /
+
+COPY --from=builder /productcatalogservice /productcatalogservice
+COPY --from=builder /app/app.env /app.env
+
+EXPOSE 8080
+
+USER nonroot:nonroot
+
+ENTRYPOINT [ "/productcatalogservice" ]
