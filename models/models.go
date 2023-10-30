@@ -5,7 +5,7 @@ import (
 
 	"gorm.io/driver/mysql"
 
-	"github.com/nazordz/boutique/product-catalog-service/configs"
+	"github.com/nazordz/boutique-product-catalog-service/configs"
 	log "github.com/sirupsen/logrus"
 	"gorm.io/gorm"
 )

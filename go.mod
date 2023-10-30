@@ -1,4 +1,4 @@
-module github.com/nazordz/boutique/product-catalog-service
+module github.com/nazordz/boutique-product-catalog-service
 
 go 1.21.2
 

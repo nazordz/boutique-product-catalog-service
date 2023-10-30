@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/nazordz/boutique/product-catalog-service/configs"
-	"github.com/nazordz/boutique/product-catalog-service/models"
-	"github.com/nazordz/boutique/product-catalog-service/routers"
+	"github.com/nazordz/boutique-product-catalog-service/configs"
+	"github.com/nazordz/boutique-product-catalog-service/models"
+	"github.com/nazordz/boutique-product-catalog-service/routers"
 	log "github.com/sirupsen/logrus"
 )
 

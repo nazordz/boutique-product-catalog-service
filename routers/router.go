@@ -2,7 +2,7 @@ package routers
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/nazordz/boutique/product-catalog-service/routers/handlers"
+	"github.com/nazordz/boutique-product-catalog-service/routers/handlers"
 )
 
 func InitRouter() *gin.Engine {

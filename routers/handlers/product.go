@@ -4,8 +4,8 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/nazordz/boutique/product-catalog-service/dtos"
-	"github.com/nazordz/boutique/product-catalog-service/models"
+	"github.com/nazordz/boutique-product-catalog-service/dtos"
+	"github.com/nazordz/boutique-product-catalog-service/models"
 )
 
 func GetProducts(c *gin.Context) {
