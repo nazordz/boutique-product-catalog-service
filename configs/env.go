@@ -7,12 +7,13 @@ import (
 )
 
 type envConfigs struct {
-	Port       int    `mapstructure:"PORT"`
-	DBHost     string `mapstructure:"DB_HOST"`
-	DBPort     int    `mapstructure:"DB_PORT"`
-	DBName     string `mapstructure:"DB_NAME"`
-	DBUser     string `mapstructure:"DB_USER"`
-	DBPassword string `mapstructure:"DB_PASSWORD"`
+	Port         int    `mapstructure:"PORT"`
+	DBHost       string `mapstructure:"DB_HOST"`
+	DBPort       int    `mapstructure:"DB_PORT"`
+	DBName       string `mapstructure:"DB_NAME"`
+	DBUser       string `mapstructure:"DB_USER"`
+	DBPassword   string `mapstructure:"DB_PASSWORD"`
+	JWTSecretKey string `mapstructure:"JWT_SECRET_KEY"`
 }
 
 var EnvConfigs *envConfigs
